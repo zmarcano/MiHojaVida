@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<script src="client.js"></script>
+	<link rel="stylesheet" href="style.css">	
+	<title>Resumen Curricular</title>
+</head>
+
+<body>
+
+<svg width="120" height="98" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_1_blur">
+   <feGaussianBlur stdDeviation="5.2" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <rect fill="#e5e5e5" id="canvas_background" height="100" width="122" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <rect stroke="#000" filter="url(#svg_1_blur)" opacity="0.45" transform="rotate(3 63.3763656616212,45.318595886230476) " id="svg_1" height="60.000002" width="73.638483" y="15.318598" x="26.557126" stroke-width="1.5" fill="#fff"/>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="63" id="svg_2" y="55.5" x="16.5" stroke-width="0" stroke="#000" fill="#083734">Z</text>
+  <text font-weight="bold" font-style="italic" xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="57" id="svg_3" y="86.5" x="57.5" stroke-width="0" stroke="#000" fill="#645A73">M</text>
+ </g>
+</svg>
+
+	<h1>Resumen Curricular</h1>
+
+	<h2>Nombre(s):</h2>
+	<h3>Zoany Andreina</h3>	
+	<h2>Apellido(s):</h2>
+	<h3>Marcano L&oacute;pez</h3>
+	<h2>Fecha y lugar de nacimiento:</h2>
+	<h3>18 de Febrero 1986, Caracas - Venezuela</h3>
+	
+
+	<a href="index.html">Inicio</a>
+	<a href="educacion.html">Educacion</a>
+	<a href="experiencia.html">Experiencia</a>
+
+	<h2>Educaci&oacute;n</h2>
+	<table id="educacion">
+		<thead>
+			<th>Año</th>
+			<th>Institución</th>
+			<th>Lugar</th>
+			<th>Culmin&oacute;?</th>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<h3>Agregar estudios</h3>
+	<form id="festudio" name="Agregar Estudios">
+		<label>Año:</label><br>
+		<select id="slt_ano">
+		  <option value="2013">2013</option>
+		  <option value="2014">2014</option>
+		  <option value="2015">2015</option>			
+		  <option value="2016">2016</option>
+		  <option value="2017">2017</option>
+		  <option value="2018">2018</option>
+		</select><br>
+		<label>Instituci&oacute;n:</label><br>
+		<input type="text" id="institucion" name="institucion"><br>
+		<label>Lugar:</label><br>
+		<textarea id="lugar" rows="4" cols="50">
+		</textarea><br>
+		Culmin&oacute;:   
+		<input type="radio" name="culmino" value="si"> Si
+  		<input type="radio" name="culmino" value="no"> No
+  		<br>
+  		<input type="button" value="Enviar" onclick="addRow();">
+	</form>	
+	<br>
+	<footer>
+		<span class="footer_msg"> Correo electronico: zoanyml1802@gmail.com
+		Twitter:@zoaml
+		Telefono: +56957893638
+		Direcci&oacute;n: Caracas - Venezuela</span>
+	</footer>
+</body>
+
+</html> 
